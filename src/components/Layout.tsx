@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Header from './Header'
 import Footer from './Footer'
+import ScrollToTop from './ScrollToTop'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -25,6 +26,7 @@ const Layout = ({
         <meta property='og:url' content='https://lawlocator.org' />
         <link rel='canonical' href='https://lawlocator.org' />
       </Helmet>
+      <ScrollToTop />
       <div className='min-h-screen bg-gray-50'>
         <div className='pt-16'>
           <Header />
